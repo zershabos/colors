@@ -1,0 +1,19 @@
+<html>
+    <head>
+         <title>get</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+         $(document).ready(function(){ 
+                $(".change").click(function(){
+                $(".input").change();
+                console.log("yes")
+                $("body").css("background-color", $(".input").val()) 
+            })
+           });
+        </script>
+    </head>
+        <body>
+           <button class="change" >change</button>
+           <input class="input" type="text"/>
+        </body>
+</html>
